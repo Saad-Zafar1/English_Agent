@@ -1,0 +1,21 @@
+[project]
+name = "english-helper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saad Zafar", email = "saad.zafar2004@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.0.15",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+english-helper = "english_helper:main"
+run_project="english_helper.english:english_helper_agent"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
